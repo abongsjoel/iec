@@ -21,9 +21,9 @@ const Footer = () => {
         <footer className="bg-main-300">
             <div className="sm:px-1/10 md:flex md:justify-end md:items-center pt-10">
                 <div className="hidden md:inline-block md:w-2/5 lg:w-1/2">
-                    <NavLink to="/">
+                    <a href="/">
                         <img src={Logo} alt={ALT_VALUE} className="h-16 lg:h-20" />
-                    </NavLink> 
+                    </a> 
                 </div>
                 <div className="sm:flex sm:justify-between sm:w-full md:w-3/5 lg:w-1/2">
                     <div className="flex justify-center">
@@ -68,9 +68,9 @@ const Footer = () => {
 
             <div className="px-1/10 md:mt-8">
                 <div className="flex justify-center w-full md:hidden py-8">
-                    <NavLink to="/">
+                    <a href="/">
                         <img src={Logo} alt={ALT_VALUE} className="h-20" />
-                    </NavLink>
+                    </a>
                 </div>
                 <hr className="md:mt-0" />
                 <p className="w-full flex justify-center text-xs text-gray-500 my-2">Copyright (c) 2020 - IEC</p>

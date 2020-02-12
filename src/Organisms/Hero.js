@@ -1,9 +1,10 @@
 import React from 'react';
 
-import Img from '../Atoms/Img'
+import Img from '../Atoms/Img';
+import HeroButton from '../Atoms/HeroButton';
 
 import HeroImage from '../assets/images/hero-img.jpeg';
-// import HeroLogo from '../assets/logo/hero-logo.png';
+
 // import Aux from '../hoc/Auxilary';
 
 const Hero = () => (
@@ -14,9 +15,12 @@ const Hero = () => (
             styles=" absolute"  
         />
         <div className="absolute flex h-full w-full items-center px-1/10 bg-trans">
-            <p className="pt-2 hero-font font-bold ">
-                WANT TO STUDY IN <br />CANADA ?
-            </p>
+            <div>
+                <p className="pt-2 hero-font font-extrabold mb-4">
+                    WANT TO STUDY IN <br />CANADA ?
+                </p>
+                <HeroButton text="Register Now" link="/" />
+            </div>
       
         </div>
     </div>

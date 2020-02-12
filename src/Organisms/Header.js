@@ -39,9 +39,9 @@ const Header = () => {
             <header className="fixed top-0 bg-white z-50 w-full px-1/10 md:flex md:justify-between md:items-center">
                 <div className="py-4 flex justify-between items-center">
                     <div className="h-auto w-32">
-                        <NavLink to="/">
+                        <a href="/">
                             <Img src={Logo} alt="Logo" />
-                        </NavLink>  
+                        </a>  
                     </div>
                     <div className="md:hidden">
                         <button 
