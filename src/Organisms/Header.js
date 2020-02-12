@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-// import Logo from '../assets/logo/logo.png';
+import Logo from '../assets/logo/logo.png';
 
 // import NavItem from '../Molecules/NavItem';
-// import Img from '../Atoms/Img';
+import Img from '../Atoms/Img';
 // import Backdrop from '../Atoms/Backdrop/Backdrop';
 
 import Aux from '../hoc/Auxilary';
@@ -40,8 +40,8 @@ const Header = () => {
                 <div className="py-4 flex justify-between items-center">
                     <div className="h-auto w-20">
                         <NavLink to="/">
-                            {/* <Img src={Logo} alt="Logo" /> */}
-                        </NavLink>
+                            <Img src={Logo} alt="Logo" />
+                        </NavLink>  
                     </div>
                     <div className="md:hidden">
                         <button 
@@ -58,6 +58,7 @@ const Header = () => {
                 </div>
                 <nav className={menuStyle + " md:pb-0 uppercase bg-white text-main-100 md:text-xs lg:text-sm md:flex"}>
                     <ul className="md:flex md:pt-2">
+                        <li>Home</li>
                         {/* <NavItem link="/" exact menuItem="Home" styles={itemStyles} clicked={closeMenu} />
                         <NavItem link='/about-us' menuItem="About Us" styles={itemStyles} clicked={closeMenu} />
                         <NavItem link='/our-values' menuItem="Our Values" styles={itemStyles} clicked={closeMenu} />
