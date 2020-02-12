@@ -15,8 +15,8 @@ function App() {
         {/* <Route path="/about-us" component={AboutUsPage} />
         <Route path="/our-values" component={OurValuesPage} />
         <Route path="/our-communities" component={OurCommunitiesPage} />
-        <Route path="/contact-us" component={ContactUsPage} />
-        <Route path="/" component={Homepage} /> */}
+        <Route path="/contact-us" component={ContactUsPage} /> */}
+        <Route path="/" component={Homepage} />
       </Switch>
     </Layout>
   );

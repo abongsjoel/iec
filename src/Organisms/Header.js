@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 import Logo from '../assets/logo/logo.png';
 
-// import NavItem from '../Molecules/NavItem';
+import NavItem from '../Atoms/NavItem';
 import Img from '../Atoms/Img';
-// import Backdrop from '../Atoms/Backdrop/Backdrop';
+import Backdrop from '../Atoms/Backdrop/Backdrop';
 
 import Aux from '../hoc/Auxilary';
 
@@ -27,18 +27,18 @@ const Header = () => {
         iconStyle = "text-sec-100";
         menuStyle = "fixed z-50 w-full h-full left-0 py-4 text-lg px-1/10";
     } else {
-        iconStyle = "text-main-200";
+        iconStyle = "text-main-100";
         menuStyle = "hidden";
     }
 
-    const itemStyles = "py-3 pl-4 md:pl-8 lg:pl-12 pr-0 md:flex md:items-end";
+    const itemStyles = "py-3 pl-4 md:pl-8 lg:pl-20 font-bold pr-0 md:flex md:items-end";
 
     return (
         <Aux>
-            {/* <Backdrop show={showSideMenu} clicked={toggleMenu} /> */}
+            <Backdrop show={showSideMenu} clicked={toggleMenu} />
             <header className="fixed top-0 bg-white z-50 w-full px-1/10 md:flex md:justify-between md:items-center">
                 <div className="py-4 flex justify-between items-center">
-                    <div className="h-auto w-20">
+                    <div className="h-auto w-32">
                         <NavLink to="/">
                             <Img src={Logo} alt="Logo" />
                         </NavLink>  
@@ -58,12 +58,10 @@ const Header = () => {
                 </div>
                 <nav className={menuStyle + " md:pb-0 uppercase bg-white text-main-100 md:text-xs lg:text-sm md:flex"}>
                     <ul className="md:flex md:pt-2">
-                        <li>Home</li>
-                        {/* <NavItem link="/" exact menuItem="Home" styles={itemStyles} clicked={closeMenu} />
+                        <NavItem link="/" exact menuItem="Home" styles={itemStyles} clicked={closeMenu} />
                         <NavItem link='/about-us' menuItem="About Us" styles={itemStyles} clicked={closeMenu} />
-                        <NavItem link='/our-values' menuItem="Our Values" styles={itemStyles} clicked={closeMenu} />
-                        <NavItem link='/our-communities' menuItem="Our Communities" styles={itemStyles} clicked={closeMenu} />
-                        <NavItem link='/contact-us' menuItem="Contact Us" styles={itemStyles} clicked={closeMenu} /> */}
+                        <NavItem link='/what-we-do' menuItem="What We Do" styles={itemStyles} clicked={closeMenu} />
+                        <NavItem link='/contact-us' menuItem="Contact Us" styles={itemStyles} clicked={closeMenu} />
                     </ul>
                 </nav>
             </header>

@@ -6,7 +6,6 @@ const Img = ({src, alt, styles}) => (
         alt={alt} 
         className={"w-full h-full object-cover object-center " +styles} 
     />
-    // <img src={src} alt={alt} className={"  w-full h-full object-cover object-center " +styles} />
 );
 
 
