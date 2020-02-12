@@ -31,7 +31,7 @@ const Header = () => {
         menuStyle = "hidden";
     }
 
-    const itemStyles = "py-3 pl-4 md:pl-8 lg:pl-20 font-bold pr-0 md:flex md:items-end";
+    const itemStyles = "py-3 pl-4 md:pl-12 lg:pl-20 font-bold pr-0 md:flex md:items-end";
 
     return (
         <Aux>

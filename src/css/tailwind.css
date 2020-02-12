@@ -2,4 +2,10 @@
 
 @tailwind components;
 
+
+/* Active link style */
+.active {
+    @apply text-sec-100 font-bold border-b-2 border-sec-100;
+}
+
 @tailwind utilities;

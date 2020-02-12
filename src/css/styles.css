@@ -606,6 +606,15 @@ video {
   }
 }
 
+/* Active link style */
+
+.active {
+  color: #ff9800;
+  font-weight: 700;
+  border-bottom-width: 2px;
+  border-color: #ff9800;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
