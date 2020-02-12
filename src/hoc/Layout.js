@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../Organisms/Header';
-// import Footer from '../Organisms/Footer';
+import Footer from '../Organisms/Footer';
 
 import Aux from './Auxilary';
 
@@ -11,7 +11,7 @@ const layout = ( props ) => (
         <main className="mt-16">
             {props.children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
     </Aux>
 );
 

@@ -10,8 +10,8 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/about-us" component={AboutUsPage} />
-        <Route path="/contact-us" component={ContactUsPage} />
+        {/* <Route path="/about-us" component={AboutUsPage} />
+        <Route path="/contact-us" component={ContactUsPage} /> */}
         <Route path="/" component={Homepage} />
       </Switch>
     </Layout>
