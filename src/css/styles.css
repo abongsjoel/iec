@@ -615,6 +615,19 @@ video {
   border-color: #ff9800;
 }
 
+.hero-font {
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 72px;
+  line-height: 76px;
+  text-align: left;
+}
+
+.bg-trans {
+  background-color: rgba(0,0,0, 0.38);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

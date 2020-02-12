@@ -18,7 +18,7 @@ const ALT_VALUE = 'IEC'
 const Footer = () => {
     const itemStyles = "text-xs pb-1 text-gray-800";
     return (
-        <footer>
+        <footer className="bg-main-300">
             <div className="sm:px-1/10 md:flex md:justify-end md:items-center pt-10">
                 <div className="hidden md:inline-block md:w-2/5 lg:w-1/2">
                     <NavLink to="/">
