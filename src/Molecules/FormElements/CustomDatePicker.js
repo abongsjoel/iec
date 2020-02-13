@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import DatePicker from 'react-datepicker/es';
 import { RHFInput } from 'react-hook-form-input';
 import Img from '../../Atoms/Img2';
-// import calendarIcon from '../../../images/calendar.svg';
+import calendarIcon from '../../assets/icons/calenda.svg';
 import Label from '../../Atoms/Label';
 
 function CustomDatePicker({
@@ -14,13 +14,14 @@ function CustomDatePicker({
                               value,
                               required,
                               name,
+                              style,
                               register,
                               setValue,
                               errors,
                               ...props
                           }) {
     return (
-        <div className="mx-4 xl:mx-8">
+        <div className={style}>
             <Label content={label} required={required} />
             <div className="w-full">
                 <div className="relative">
@@ -39,7 +40,7 @@ function CustomDatePicker({
                         {...props}
                     />
                     <div className="pointer-events-none mt-1 absolute inset-y-0 right-0 flex items-center px-3 rounded-lg bg-gray-thick-1">
-                        {/*<Img src={calendarIcon} alt="" className="" />*/}
+                        <Img src={calendarIcon} alt="" className="" />
                     </div>
                 </div>
             </div>
@@ -54,6 +55,7 @@ CustomDatePicker.propTypes = {
     label: PropTypes.string,
     instruction: PropTypes.string,
     required: PropTypes.bool,
+    style: PropTypes.string,
     name: PropTypes.string,
     value: PropTypes.string,
     props: PropTypes.object,

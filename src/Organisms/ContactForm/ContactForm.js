@@ -147,6 +147,7 @@ function ContactForm({ onSubmitEvent, match }) {
                         setValue={setValue}
                         register={register}
                         errors={errors}
+                        style="mr-5"
                         // selected={dateOfLoading}
                         label="Date of Birth"
                         name="dateOfBirth"
