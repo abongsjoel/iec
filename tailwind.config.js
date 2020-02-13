@@ -15,7 +15,8 @@ module.exports = {
 
         nuetral: {
           100: '#272727',     //text
-          200: '#efefef'      //background
+          200: '#efefef',      //background
+          300: '#c2c2c2'      //icon bg
         }
       },
 
