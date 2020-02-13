@@ -103,15 +103,37 @@ function ContactForm({ onSubmitEvent, match }) {
                         required
                     />
                 </div>
-                {/*<div className="w-full">*/}
-                {/*    <Input*/}
-                {/*        // register={register}*/}
-                {/*        label="Voyage Number"*/}
-                {/*        name="voyageNumber"*/}
-                {/*        // instruction={errors.voyageNumber && 'Enter a valid voyage number'}*/}
-                {/*        required*/}
-                {/*    />*/}
-                {/*</div>*/}
+            </div>
+
+
+            {/*Second row*/}
+            <div className="flex w-full mt-4">
+                <div className="w-full">
+                    <Input
+                        register={register}
+                        label="Phone Number"
+                        name="phoneNumber"
+                        style="mr-5"
+                        instruction={
+                            errors.phoneNumber &&
+                            'Please enter a valid Phone Number'
+                        }
+                        required
+                    />
+                </div>
+                <div className="w-full">
+                    <Input
+                        register={register}
+                        label="Country of Origin"
+                        name="countryOfOrgin"
+                        style="ml-5"
+                        instruction={
+                            errors.countryOfOrgin &&
+                            'Please enter your country of Origin'
+                        }
+                        required
+                    />
+                </div>
             </div>
             {/*<div className="flex w-full mt-2 ">*/}
             {/*    <div className="w-full">*/}

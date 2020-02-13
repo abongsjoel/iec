@@ -8,5 +8,11 @@ export const ContactFormValidation = yup.object().shape({
         .string()
         .matches('^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$')
         .required(),
+    phoneNumber: yup
+        .number()
+        .required(),
+    countryOfOrgin: yup
+        .string()
+        .required(),
 
 });
