@@ -17,9 +17,6 @@ const Hero = () => (
         />
         <div className="absolute flex h-full w-full items-center px-1/10 bg-trans">
             <div>
-                {/*<p className="pt-2 hero-font font-extrabold mb-4">*/}
-                {/*    WANT TO STUDY IN <br />CANADA ?*/}
-                {/*</p>*/}
                 <HeroMessage className="pt-2 font-extrabold mb-4">WANT TO STUDY IN <br />CANADA ?</HeroMessage>
                 <HeroButton text="Register Now" link="/" />
             </div>

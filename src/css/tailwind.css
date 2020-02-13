@@ -17,6 +17,13 @@
 /*    text-align: left;*/
 /*}*/
 
+.h1-font {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
 .bg-trans {
     background-color: rgba(0,0,0, 0.38);
 }

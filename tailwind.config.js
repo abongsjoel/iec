@@ -5,8 +5,8 @@ module.exports = {
         
         main: {
           100: '#0072e4',    //main blue
-          200: '#233d74',    //Footer headings
-          300: '#eff8fe',    //Footer background    
+          200: '#233d74',    //Footer headings (thick blue)
+          300: '#eff8fe',    //Footer background  (light blue)
         },  
 
         sec: {
@@ -61,4 +61,4 @@ module.exports = {
     borderColor: ['responsive', 'hover', 'focus', 'active']
   },
   plugins: []
-}
+};
