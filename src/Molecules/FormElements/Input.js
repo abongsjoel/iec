@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import Label from '../Atoms/Label';
+import Label from '../../Atoms/Label';
 
 function Input({
                    label,

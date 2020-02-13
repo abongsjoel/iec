@@ -9,9 +9,9 @@ import PropTypes from 'prop-types';
 import { useForm } from 'react-hook-form';
 // import AsyncSelect from 'react-select/async';
 // import { withRouter } from 'react-router-dom';
-import Input from '../../Molecules/Input';
+import Input from '../../Molecules/FormElements/Input';
 // import CustomSelect from '../../../../../../components/Input/Select';
-// import CustomDatePicker from '../../../../../../components/Input/DatePicker';
+import CustomDatePicker from '../../Molecules/FormElements/CustomDatePicker';
 // import File from '../../../../../../components/Input/File';
 // import { getPorts } from '../../../../../../services/PortService';
 // import LodgeFooterButton from '../../Footer';
@@ -119,6 +119,37 @@ function ContactForm({ onSubmitEvent, match }) {
                             'Please enter a valid Phone Number'
                         }
                         required
+                    />
+                </div>
+                <div className="w-full">
+                    <Input
+                        register={register}
+                        label="Country of Origin"
+                        name="countryOfOrgin"
+                        style="ml-5"
+                        instruction={
+                            errors.countryOfOrgin &&
+                            'Please enter your country of Origin'
+                        }
+                        required
+                    />
+                </div>
+            </div>
+
+
+            {/*third row*/}
+            <div className="flex w-full mt-4">
+                <div className="w-full">
+                    <CustomDatePicker
+                        // onChange={date => {
+                        //     setDateOfLoading(date);
+                        // }}
+                        setValue={setValue}
+                        register={register}
+                        errors={errors}
+                        // selected={dateOfLoading}
+                        label="Date of Birth"
+                        name="dateOfBirth"
                     />
                 </div>
                 <div className="w-full">

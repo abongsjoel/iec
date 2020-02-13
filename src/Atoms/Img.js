@@ -8,5 +8,4 @@ const Img = ({src, alt, styles}) => (
     />
 );
 
-
 export default Img;
