@@ -2,6 +2,7 @@ import React from 'react';
 
 import Img from '../Atoms/Img';
 import HeroButton from '../Atoms/HeroButton';
+import HeroMessage from "../Atoms/HeroMessage";
 
 import HeroImage from '../assets/images/hero-img.jpeg';
 
@@ -16,9 +17,10 @@ const Hero = () => (
         />
         <div className="absolute flex h-full w-full items-center px-1/10 bg-trans">
             <div>
-                <p className="pt-2 hero-font font-extrabold mb-4">
-                    WANT TO STUDY IN <br />CANADA ?
-                </p>
+                {/*<p className="pt-2 hero-font font-extrabold mb-4">*/}
+                {/*    WANT TO STUDY IN <br />CANADA ?*/}
+                {/*</p>*/}
+                <HeroMessage className="pt-2 font-extrabold mb-4">WANT TO STUDY IN <br />CANADA ?</HeroMessage>
                 <HeroButton text="Register Now" link="/" />
             </div>
       
