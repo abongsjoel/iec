@@ -642,6 +642,20 @@ video {
   background-color: rgba(0,0,0, 0.38);
 }
 
+.input {
+  background-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  width: 100%;
+  border-color: #efefef;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

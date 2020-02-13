@@ -20,17 +20,17 @@ import Input from '../Molecules/Input';
 // import { addDocument } from '../../../../../../services/documentService';
 // import { getVesselByName } from '../../../../../../services/NetworkService';
 
-// const customStyles = {
-//     control: () => ({
-//         width: '100%',
-//         height: 44,
-//         border: '2px solid #cecece',
-//         boxShadow:
-//             '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-//         fontSize: '1rem',
-//         marginTop: '0.25rem',
-//     }),
-// };
+const customStyles = {
+    control: () => ({
+        width: '100%',
+        height: 44,
+        border: '2px solid #cecece',
+        boxShadow:
+            '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+        fontSize: '1rem',
+        marginTop: '0.25rem',
+    }),
+};
 
 // const filterVessel = inputValue =>
 //     getVesselByName(inputValue).then(response => response.data);

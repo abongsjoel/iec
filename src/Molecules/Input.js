@@ -18,7 +18,7 @@ function Input({
             <Label content={label} required={required} />
             <div className="w-full">
                 <input
-                    className="input focus:border-main-100 cursor-text"
+                    className="input focus:outline-none focus:border-main-100 cursor-text"
                     name={name}
                     ref={register}
                     defaultValue={value || ''}
