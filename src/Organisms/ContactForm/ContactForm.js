@@ -15,7 +15,7 @@ import Input from '../../Molecules/Input';
 // import File from '../../../../../../components/Input/File';
 // import { getPorts } from '../../../../../../services/PortService';
 // import LodgeFooterButton from '../../Footer';
-// import { TransportationValidation } from './validation';
+import { ContactFormValidation } from './validation';
 // import Label from '../../../../../../components/Label';
 // import { addDocument } from '../../../../../../services/documentService';
 // import { getVesselByName } from '../../../../../../services/NetworkService';
@@ -46,10 +46,10 @@ function ContactForm({ onSubmitEvent, match }) {
 //     const [ports, setPorts] = useState([]);
 //     const [dateOfLoading, setDateOfLoading] = useState(new Date());
 //     const [dateOfLoss, setDateOfLoss] = useState(new Date());
-//     const { register, handleSubmit, errors, setValue } = useForm({
-//         validationSchema: ContactValidation,
-//         mode: 'onBlur',
-//     });
+    const { register, handleSubmit, errors, setValue } = useForm({
+        validationSchema: ContactFormValidation,
+        mode: 'onBlur',
+    });
     // useEffect(() => {
     //     getPorts().then(response => {
     //         const result = [];
@@ -79,12 +79,12 @@ function ContactForm({ onSubmitEvent, match }) {
             <div className="flex w-full ">
                 <div className="w-full">
                     <Input
-                        // register={register}
+                        register={register}
                         label="Full Name"
                         name="fullName"
                         style="mr-5"
                         instruction={
-                            // errors.transportationDocumentNumber &&
+                            errors.fullName &&
                             'Please enter your fullName'
                         }
                         required
@@ -92,11 +92,14 @@ function ContactForm({ onSubmitEvent, match }) {
                 </div>
                 <div className="w-full">
                     <Input
-                        // register={register}
+                        register={register}
                         label="Email Address"
                         name="emailAddress"
                         style="ml-5"
-                        // instruction={errors.containerNumber && 'Format BICU 123456-7'}
+                        instruction={
+                            errors.emailAddress &&
+                            'Please enter your email Address'
+                        }
                         required
                     />
                 </div>

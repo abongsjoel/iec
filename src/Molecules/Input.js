@@ -36,6 +36,7 @@ function Input({
 Input.propTypes = {
     label: PropTypes.string,
     register: PropTypes.func,
+    style: PropTypes.string,
     props: PropTypes.object,
     instruction: PropTypes.string,
     required: PropTypes.bool,
