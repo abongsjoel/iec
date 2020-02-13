@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-// import DatePicker from 'react-datepicker/es';
+import DatePicker from 'react-datepicker/es';
 import { RHFInput } from 'react-hook-form-input';
 import Img from '../../Atoms/Img2';
 // import calendarIcon from '../../../images/calendar.svg';
@@ -24,20 +24,20 @@ function CustomDatePicker({
             <Label content={label} required={required} />
             <div className="w-full">
                 <div className="relative">
-                    {/*<RHFInput*/}
-                    {/*    // as={*/}
-                    {/*    //     <DatePicker*/}
-                    {/*    //         value={value}*/}
-                    {/*    //         name={name}*/}
-                    {/*    //         className="input block appearance-none"*/}
-                    {/*    //     />*/}
-                    {/*    // }*/}
-                    {/*    name={name}*/}
-                    {/*    value={value}*/}
-                    {/*    register={register}*/}
-                    {/*    setValue={setValue}*/}
-                    {/*    {...props}*/}
-                    {/*/>*/}
+                    <RHFInput
+                        as={
+                            <DatePicker
+                                value={value}
+                                name={name}
+                                className="input block appearance-none"
+                            />
+                        }
+                        name={name}
+                        value={value}
+                        register={register}
+                        setValue={setValue}
+                        {...props}
+                    />
                     <div className="pointer-events-none mt-1 absolute inset-y-0 right-0 flex items-center px-3 rounded-lg bg-gray-thick-1">
                         {/*<Img src={calendarIcon} alt="" className="" />*/}
                     </div>
