@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ContactForm from './ContactForm';
+import ContactForm from './ContactForm/ContactForm';
 import SectionHeading from "../Atoms/SectionHeading";
 
 const GetInTouch = () => (

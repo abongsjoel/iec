@@ -8,7 +8,7 @@ const SectionHeading = styled.h1`
     font-size: 36px;
     line-height: 0.667;
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 0 50px 0;
     
     // @media only screen and (min-width: 400px) {
     //     & {

@@ -11,10 +11,11 @@ function Input({
                    register,
                    name,
                    value,
+                   style,
                    ...props
                }) {
     return (
-        <div>
+        <div className={style}>
             <Label content={label} required={required} />
             <div className="w-full">
                 <input

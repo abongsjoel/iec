@@ -6,10 +6,10 @@
 import React, { useEffect, useState } from 'react';
 
 import PropTypes from 'prop-types';
-// import { useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 // import AsyncSelect from 'react-select/async';
 // import { withRouter } from 'react-router-dom';
-import Input from '../Molecules/Input';
+import Input from '../../Molecules/Input';
 // import CustomSelect from '../../../../../../components/Input/Select';
 // import CustomDatePicker from '../../../../../../components/Input/DatePicker';
 // import File from '../../../../../../components/Input/File';
@@ -47,7 +47,7 @@ function ContactForm({ onSubmitEvent, match }) {
 //     const [dateOfLoading, setDateOfLoading] = useState(new Date());
 //     const [dateOfLoss, setDateOfLoss] = useState(new Date());
 //     const { register, handleSubmit, errors, setValue } = useForm({
-//         validationSchema: TransportationValidation,
+//         validationSchema: ContactValidation,
 //         mode: 'onBlur',
 //     });
     // useEffect(() => {
@@ -82,9 +82,10 @@ function ContactForm({ onSubmitEvent, match }) {
                         // register={register}
                         label="Full Name"
                         name="fullName"
+                        style="mr-5"
                         instruction={
                             // errors.transportationDocumentNumber &&
-                            '8 to 12 Alphanumeric Characters'
+                            'Please enter your fullName'
                         }
                         required
                     />
@@ -93,20 +94,21 @@ function ContactForm({ onSubmitEvent, match }) {
                     <Input
                         // register={register}
                         label="Email Address"
-                        name="emailaddress"
+                        name="emailAddress"
+                        style="ml-5"
                         // instruction={errors.containerNumber && 'Format BICU 123456-7'}
                         required
                     />
                 </div>
-                <div className="w-full">
-                    <Input
-                        // register={register}
-                        label="Voyage Number"
-                        name="voyageNumber"
-                        // instruction={errors.voyageNumber && 'Enter a valid voyage number'}
-                        required
-                    />
-                </div>
+                {/*<div className="w-full">*/}
+                {/*    <Input*/}
+                {/*        // register={register}*/}
+                {/*        label="Voyage Number"*/}
+                {/*        name="voyageNumber"*/}
+                {/*        // instruction={errors.voyageNumber && 'Enter a valid voyage number'}*/}
+                {/*        required*/}
+                {/*    />*/}
+                {/*</div>*/}
             </div>
             {/*<div className="flex w-full mt-2 ">*/}
             {/*    <div className="w-full">*/}

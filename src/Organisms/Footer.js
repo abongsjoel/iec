@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 import mailIcon from '../assets/icons/mail.png';
 import phoneIcon from '../assets/icons/phone.png';
@@ -11,9 +10,9 @@ import NavItem from '../Atoms/NavItem';
 const CONTACTINFO = {
     'info@iec.com': mailIcon,
     "0000000000": phoneIcon,
-}
+};
 
-const ALT_VALUE = 'IEC'
+const ALT_VALUE = 'IEC';
 
 const Footer = () => {
     const itemStyles = "text-xs pb-1 text-gray-800";
@@ -77,7 +76,7 @@ const Footer = () => {
             </div>
         </footer>
     );
-}
+};
 
 
 export default Footer;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import Logo from '../assets/logo/logo.png';
 
@@ -15,11 +14,11 @@ const Header = () => {
     
     const toggleMenu =() => {
         setShowSideMenu(!showSideMenu);
-    }
+    };
 
     const closeMenu = () => {
         setShowSideMenu(false);
-    }
+    };
 
     let iconStyle = null;
     let menuStyle = null;
@@ -67,6 +66,6 @@ const Header = () => {
             </header>
         </Aux>
     );
-}
+};
 
 export default Header;
