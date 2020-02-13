@@ -44,7 +44,9 @@ import { ContactFormValidation } from './validation';
 function ContactForm({ onSubmitEvent, match }) {
 //     const { id } = match.params;
 //     const [ports, setPorts] = useState([]);
-//     const [dateOfLoading, setDateOfLoading] = useState(new Date());
+    const [dateOfBirth, setDateOfBirth] = useState(new Date());
+    const [dateOfLoading, setDateOfLoading] = useState(new Date());
+
 //     const [dateOfLoss, setDateOfLoss] = useState(new Date());
     const { register, handleSubmit, errors, setValue } = useForm({
         validationSchema: ContactFormValidation,
@@ -141,14 +143,14 @@ function ContactForm({ onSubmitEvent, match }) {
             <div className="flex w-full mt-4">
                 <div className="w-full">
                     <CustomDatePicker
-                        // onChange={date => {
-                        //     setDateOfLoading(date);
-                        // }}
+                        onChange={date => {
+                            setDateOfBirth(date);
+                        }}
                         setValue={setValue}
                         register={register}
                         errors={errors}
                         style="mr-5"
-                        // selected={dateOfLoading}
+                        selected={dateOfBirth}
                         label="Date of Birth"
                         name="dateOfBirth"
                     />

@@ -29,7 +29,7 @@
 }
 
 .input {
-    @apply  bg-white border-2 border-solid w-full border-nuetral-200 rounded-lg text-base p-2 shadow mt-1 cursor-pointer;
+    @apply  bg-white border-2 border-solid w-full border-nuetral-300 rounded-lg text-base p-2 shadow mt-1 cursor-pointer;
 }
 
 @tailwind utilities;
