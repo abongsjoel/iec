@@ -98,7 +98,7 @@ function ContactForm({ onSubmitEvent, match }) {
                         style="ml-5"
                         instruction={
                             errors.emailAddress &&
-                            'Please enter your email Address'
+                            'Please enter a valid email Address'
                         }
                         required
                     />

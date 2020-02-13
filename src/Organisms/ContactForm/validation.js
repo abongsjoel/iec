@@ -6,15 +6,7 @@ export const ContactFormValidation = yup.object().shape({
         .required(),
     emailAddress: yup
         .string()
+        .matches('^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$')
         .required(),
-    // voyageNumber: yup.string().required(),
-    // imoNumber: yup
-    //     .string()
-    //     .matches('IMO [0-9]{7}')
-    //     .required(),
-    // // vesselName: yup.string().required(),
-    // consignor: yup.string().required(),
-    // consignee: yup.string().required(),
-    // portOfLoading: yup.object().required(),
-    // portOfDischarge: yup.object().required(),
+
 });
