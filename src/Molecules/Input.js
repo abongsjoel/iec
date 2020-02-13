@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import Label from '../Atoms/Label';
 
@@ -32,14 +32,14 @@ function Input({
     );
 }
 
-// Input.propTypes = {
-//     label: PropTypes.string,
-//     register: PropTypes.func,
-//     props: PropTypes.object,
-//     instruction: PropTypes.string,
-//     required: PropTypes.bool,
-//     name: PropTypes.string,
-//     value: PropTypes.string,
-// };
+Input.propTypes = {
+    label: PropTypes.string,
+    register: PropTypes.func,
+    props: PropTypes.object,
+    instruction: PropTypes.string,
+    required: PropTypes.bool,
+    name: PropTypes.string,
+    value: PropTypes.string,
+};
 
 export default Input;

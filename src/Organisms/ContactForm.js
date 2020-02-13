@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 // import { useForm } from 'react-hook-form';
 // import AsyncSelect from 'react-select/async';
 // import { withRouter } from 'react-router-dom';
@@ -20,17 +20,17 @@ import Input from '../Molecules/Input';
 // import { addDocument } from '../../../../../../services/documentService';
 // import { getVesselByName } from '../../../../../../services/NetworkService';
 
-const customStyles = {
-    control: () => ({
-        width: '100%',
-        height: 44,
-        border: '2px solid #cecece',
-        boxShadow:
-            '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
-        fontSize: '1rem',
-        marginTop: '0.25rem',
-    }),
-};
+// const customStyles = {
+//     control: () => ({
+//         width: '100%',
+//         height: 44,
+//         border: '2px solid #cecece',
+//         boxShadow:
+//             '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+//         fontSize: '1rem',
+//         marginTop: '0.25rem',
+//     }),
+// };
 
 // const filterVessel = inputValue =>
 //     getVesselByName(inputValue).then(response => response.data);
@@ -80,8 +80,8 @@ function ContactForm({ onSubmitEvent, match }) {
                 <div className="w-full">
                     <Input
                         // register={register}
-                        label="Transportation Document Number"
-                        name="transportationDocumentNumber"
+                        label="Full Name"
+                        name="fullName"
                         instruction={
                             // errors.transportationDocumentNumber &&
                             '8 to 12 Alphanumeric Characters'
@@ -92,8 +92,8 @@ function ContactForm({ onSubmitEvent, match }) {
                 <div className="w-full">
                     <Input
                         // register={register}
-                        label="Container Number"
-                        name="containerNumber"
+                        label="Email Address"
+                        name="emailaddress"
                         // instruction={errors.containerNumber && 'Format BICU 123456-7'}
                         required
                     />
@@ -238,12 +238,12 @@ function ContactForm({ onSubmitEvent, match }) {
             {/*<LodgeFooterButton active={1} onNextEvent={handleSubmit(onSubmitEvent)} />*/}
         </form>
     );
-};
+}
 
-// TransportationScreen.propTypes = {
-//     onSubmitEvent: PropTypes.func,
-//     match: PropTypes.object,
-// };
+ContactForm.propTypes = {
+    onSubmitEvent: PropTypes.func,
+    match: PropTypes.object,
+};
 
 // export default withRouter(ContactForm);
 export default ContactForm;
