@@ -7,6 +7,12 @@ import './css/styles.css'; //For tailwindcss
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import './assets/fonts/georgia.woff';
+import './assets/fonts/georgia.ttf';
+import './assets/fonts/georgiab.woff';
+import './assets/fonts/georgiai.woff';
+import './assets/fonts/georgiaz.woff';
+
 const app = (
     <BrowserRouter>
         <App />
