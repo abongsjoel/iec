@@ -6,7 +6,7 @@ import WelcomeMessageContent from '../Molecules/Specific/WelcomeMessageContent';
 import welcomeImage from '../assets/images/welcome.jpeg';
 
 const WelcomeMessage = () => (
-    <div className="px-1/10 pt-20">
+    <div className="px-1/10 pt-5 sm:pt-20">
         <Message
             headingpart1="Our Mission "
             content={<WelcomeMessageContent />}
