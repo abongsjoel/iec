@@ -13,6 +13,7 @@ import Input from '../../Molecules/FormElements/Input';
 // import CustomSelect from '../../../../../../components/Input/Select';
 import CustomDatePicker from '../../Molecules/FormElements/CustomDatePicker';
 import File from '../../Molecules/FormElements/File';
+import HeroButton from "../../Atoms/HeroButton";
 // import { getPorts } from '../../../../../../services/PortService';
 // import LodgeFooterButton from '../../Footer';
 import { ContactFormValidation } from './validation';
@@ -164,6 +165,12 @@ function ContactForm({ onSubmitEvent, match }) {
                         // required
                     />
                 </div>
+            </div>
+
+
+
+            <div className="flex justify-end w-full mt-8">
+                <HeroButton text="SUBMIT NOW" />
             </div>
             {/*<div className="flex w-full mt-2 ">*/}
             {/*    <div className="w-full">*/}
