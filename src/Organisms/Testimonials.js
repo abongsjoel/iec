@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Testimonial from "../Molecules/Testimonial";
+
 const Testimonials = () => (
     <div className="px-1/10 pt-20">
-        <p>This is the Testimonials Area</p>
+        <Testimonial/>
     </div>
 );
 

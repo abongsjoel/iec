@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Testimonial = () => (
-    <div className="px-1/10 pt-20">
+    <div className="">
         <p>This is the Testimonials Area</p>
     </div>
 );
