@@ -5,7 +5,9 @@ const Quote = styled.p`
     // font-family: 'Georgia';
     font-family: 'Georgia Italic';
     // color: rgb(0, 114, 228);
-    font-size: 120px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
     font-style: italic;
     `;
 
