@@ -6,7 +6,7 @@ import WelcomeMessage from '../Organisms/WelcomeMessage';
 
 import Aux from '../hoc/Auxilary';
 import GetInTouch from "../Organisms/GetInTouch";
-import Testimonials from "../Organisms/Testimonial";
+import Testimonials from "../Organisms/Testimonials";
 
 const Homepage = () => (
     <Aux>
