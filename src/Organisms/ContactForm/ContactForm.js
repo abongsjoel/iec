@@ -81,13 +81,13 @@ function ContactForm({ onSubmitEvent, match }) {
             // className="flex flex-col justify-center p-6 pb-0 "
             // onSubmit={handleSubmit(onSubmitEvent)}
         >
-            <div className="flex w-full ">
+            <div className="md:flex w-full ">
                 <div className="w-full">
                     <Input
                         register={register}
                         label="Full Name"
                         name="fullName"
-                        style="mr-5"
+                        style="md:mr-5"
                         instruction={
                             errors.fullName &&
                             'Please enter your fullName'
@@ -100,7 +100,7 @@ function ContactForm({ onSubmitEvent, match }) {
                         register={register}
                         label="Email Address"
                         name="emailAddress"
-                        style="ml-5"
+                        style="md:ml-5"
                         instruction={
                             errors.emailAddress &&
                             'Please enter a valid email Address'
@@ -112,13 +112,13 @@ function ContactForm({ onSubmitEvent, match }) {
 
 
             {/*Second row*/}
-            <div className="flex w-full mt-4">
+            <div className="md:flex w-full mt-4">
                 <div className="w-full">
                     <Input
                         register={register}
                         label="Phone Number"
                         name="phoneNumber"
-                        style="mr-5"
+                        style="md:mr-5"
                         instruction={
                             errors.phoneNumber &&
                             'Please enter a valid Phone Number'
@@ -131,7 +131,7 @@ function ContactForm({ onSubmitEvent, match }) {
                         register={register}
                         label="Country of Origin"
                         name="countryOfOrgin"
-                        style="ml-5"
+                        style="md:ml-5"
                         instruction={
                             errors.countryOfOrgin &&
                             'Please enter your country of Origin'
@@ -143,7 +143,7 @@ function ContactForm({ onSubmitEvent, match }) {
 
 
             {/*third row*/}
-            <div className="flex w-full mt-4">
+            <div className="md:flex w-full mt-4">
                 <div className="w-full">
                     <CustomDatePicker
                         onChange={date => {
@@ -152,7 +152,7 @@ function ContactForm({ onSubmitEvent, match }) {
                         setValue={setValue}
                         register={register}
                         errors={errors}
-                        style="mr-5"
+                        style="md:mr-5"
                         selected={dateOfBirth}
                         label="Date of Birth"
                         name="dateOfBirth"
@@ -162,7 +162,7 @@ function ContactForm({ onSubmitEvent, match }) {
                     <File
                         label="Upload Documents"
                         name="uploadDocuments"
-                        style="ml-5"
+                        style="md:ml-5"
                         // onChange={e => onFileAdded(e, 'bill-of-lading-front')}
                         // required
                     />
