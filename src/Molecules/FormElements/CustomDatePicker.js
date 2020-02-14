@@ -39,7 +39,7 @@ function CustomDatePicker({
                         setValue={setValue}
                         {...props}
                     />
-                    <div className="pointer-events-none mt-1 absolute inset-y-0 right-0 flex items-center px-3 rounded-lg bg-nuetral-300">
+                    <div className="pointer-events-none absolute inset-y-0 right-0 top-0 flex items-center px-3 rounded-lg bg-nuetral-300">
                         <Img src={calendarIcon} alt="" className="" />
                     </div>
                 </div>

@@ -12,7 +12,7 @@ import { useForm } from 'react-hook-form';
 import Input from '../../Molecules/FormElements/Input';
 // import CustomSelect from '../../../../../../components/Input/Select';
 import CustomDatePicker from '../../Molecules/FormElements/CustomDatePicker';
-// import File from '../../../../../../components/Input/File';
+import File from '../../Molecules/FormElements/File';
 // import { getPorts } from '../../../../../../services/PortService';
 // import LodgeFooterButton from '../../Footer';
 import { ContactFormValidation } from './validation';
@@ -70,7 +70,7 @@ function ContactForm({ onSubmitEvent, match }) {
     // const handleInputChange = newValue => newValue.replace(/\W/g, '');
     // const onFileAdded = (e, documentName) => {
     //     const file = e.target.files[0];
-    //     addDocument(id, documentName, file).then(response => console.log(response));
+    //     // addDocument(id, documentName, file).then(response => console.log(response));
     // };
 
     return (
@@ -156,16 +156,12 @@ function ContactForm({ onSubmitEvent, match }) {
                     />
                 </div>
                 <div className="w-full">
-                    <Input
-                        register={register}
-                        label="Country of Origin"
-                        name="countryOfOrgin"
+                    <File
+                        label="Upload Documents"
+                        name="uploadDocuments"
                         style="ml-5"
-                        instruction={
-                            errors.countryOfOrgin &&
-                            'Please enter your country of Origin'
-                        }
-                        required
+                        // onChange={e => onFileAdded(e, 'bill-of-lading-front')}
+                        // required
                     />
                 </div>
             </div>
