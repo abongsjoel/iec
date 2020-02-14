@@ -28,7 +28,7 @@ function TextArea({
         >
         </textarea>
       </div>
-      <span className="text-xt xl:text-ty text-red-sec flex">
+      <span className="text-sm text-red-500 flex">
         {instruction}
       </span>
     </div>
