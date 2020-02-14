@@ -14,5 +14,8 @@ export const ContactFormValidation = yup.object().shape({
     countryOfOrgin: yup
         .string()
         .required(),
+    personalSummary: yup
+        .string()
+        .required(),
 
 });

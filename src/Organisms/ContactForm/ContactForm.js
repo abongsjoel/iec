@@ -13,7 +13,9 @@ import Input from '../../Molecules/FormElements/Input';
 // import CustomSelect from '../../../../../../components/Input/Select';
 import CustomDatePicker from '../../Molecules/FormElements/CustomDatePicker';
 import File from '../../Molecules/FormElements/File';
+import TextArea from '../../Molecules/FormElements/TextArea'
 import HeroButton from "../../Atoms/HeroButton";
+
 // import { getPorts } from '../../../../../../services/PortService';
 // import LodgeFooterButton from '../../Footer';
 import { ContactFormValidation } from './validation';
@@ -167,7 +169,18 @@ function ContactForm({ onSubmitEvent, match }) {
                 </div>
             </div>
 
-
+            <div className="w-full mt-4">
+                <TextArea
+                    register={register}
+                    label="Say Something About Yourself"
+                    name="personalSummary"
+                    instruction={
+                        errors.personalSummary &&
+                        'Please say something about yourself'
+                    }
+                    required
+                />
+            </div>
 
             <div className="flex justify-end w-full mt-8">
                 <HeroButton text="SUBMIT NOW" />
