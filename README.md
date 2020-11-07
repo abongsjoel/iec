@@ -1,3 +1,41 @@
+# IEC (International Education Consultancy)
+
+> This is a responsive website built for an Education Consultancy agency.
+
+![screenshot](../master/screenshot.png)
+
+This project is built using Reactjs and Tailwind-css. I also made use of styled components to style some of the components. I made use of a variety of libraries in this project including react-datepicker, react-hook-form as well as react router to navigate betweent the different pages.
+
+## Live Demo 
+
+- [Visit Page](https://iec.now.sh/)
+
+## Built With
+
+- Reactjs
+- Tailwind-css
+
+## Author
+
+👤 **Chi A. Joel**
+
+- GitHub: [@abongsjoel](https://github.com/abongsjoel)
+- Twitter: [@thierryjoel10](https://twitter.com/ThierryJoel10)
+- LinkedIn: [Chi Abongwa Joel](https://www.linkedin.com/in/chi-abongwa-joel-b4285a97/)
+
+
+## Show your support
+<p> Give a 
+  <g-emoji class="g-emoji" alias="star" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png"><img class="emoji" alt="star" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png"></g-emoji>
+  if you like this project!</p>
+
+## License
+  <p>This project is <a href="../master/LICENSE">MIT</a> licensed.</p>
+
+
+
+## The React Framework
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
