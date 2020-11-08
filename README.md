@@ -4,7 +4,7 @@
 
 ![screenshot](../master/screenshot.png)
 
-This project is built using Reactjs and Tailwind-css. I also made use of styled components to style some of the components. I made use of a variety of libraries in this project including react-datepicker, react-hook-form as well as react router to navigate betweent the different pages.
+This project is built using Reactjs (making use of React-Hooks) and Tailwind-css. I also made use of styled components to style some of the components. I made use of a variety of libraries in this project including react-datepicker, react-hook-form as well as react-router to navigate betweent the different pages.
 
 ## Live Demo 
 
