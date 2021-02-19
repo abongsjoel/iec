@@ -28,7 +28,7 @@ This project is built using Reactjs (making use of React-Hooks) and Tailwind-css
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/abongsjoel/tic-tac-toe/issues).
+Feel free to check the [issues page](https://github.com/abongsjoel/iec/issues).
 
 
 ## Show your support
