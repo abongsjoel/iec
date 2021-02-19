@@ -24,11 +24,21 @@ This project is built using Reactjs (making use of React-Hooks) and Tailwind-css
 - LinkedIn: [Chi Abongwa Joel](https://www.linkedin.com/in/chi-abongwa-joel-b4285a97/)
 
 
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/abongsjoel/tic-tac-toe/issues).
+
+
 ## Show your support
+
 Give a ⭐️ if you like this project!
 
 ## License
+
   <p>This project is <a href="../master/LICENSE">MIT</a> licensed.</p>
+
 
 
 
